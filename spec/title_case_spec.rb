@@ -14,4 +14,7 @@ describe('String#title_case') do
   it('returns the string with the first letter of the last word always capitalized') do
     expect("i love you but".title_case()).to(eq("I Love You But"))
   end
+  it('returns numbers when numbers are entered') do
+    expect("1".title_case()).to(eq("1"))
+  end
 end
